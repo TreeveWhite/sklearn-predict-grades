@@ -5,6 +5,8 @@ python:
   
 before_install:
   - cd Predicting_Grades_Back_End
+  - "pip install -U sklearn"
+  - "pip install -U pandas"
   
 script: 
   - python test_DataSet.py
