@@ -1,0 +1,20 @@
+S:\My Documents\Programming\Python\Machine Learning\Predict Grades\Predict Grades\bin\Debug\Predict Grades.exe.config
+S:\My Documents\Programming\Python\Machine Learning\Predict Grades\Predict Grades\bin\Debug\Predict Grades.exe
+S:\My Documents\Programming\Python\Machine Learning\Predict Grades\Predict Grades\bin\Debug\Predict Grades.pdb
+S:\My Documents\Programming\Python\Machine Learning\Predict Grades\Predict Grades\obj\Debug\Predict Grades.csprojAssemblyReference.cache
+S:\My Documents\Programming\Python\Machine Learning\Predict Grades\Predict Grades\obj\Debug\Predict_Grades.root.resources
+S:\My Documents\Programming\Python\Machine Learning\Predict Grades\Predict Grades\obj\Debug\Predict_Grades.Properties.Resources.resources
+S:\My Documents\Programming\Python\Machine Learning\Predict Grades\Predict Grades\obj\Debug\Predict Grades.csproj.GenerateResource.cache
+S:\My Documents\Programming\Python\Machine Learning\Predict Grades\Predict Grades\obj\Debug\Predict Grades.csproj.CoreCompileInputs.cache
+S:\My Documents\Programming\Python\Machine Learning\Predict Grades\Predict Grades\obj\Debug\Predict Grades.exe
+S:\My Documents\Programming\Python\Machine Learning\Predict Grades\Predict Grades\obj\Debug\Predict Grades.pdb
+S:\One Drive\OneDrive - Cowes Enterprise College\Machine Learning\Predicting Grades (Front End)\Predict Grades\bin\Debug\Predict Grades.exe.config
+S:\One Drive\OneDrive - Cowes Enterprise College\Machine Learning\Predicting Grades (Front End)\Predict Grades\bin\Debug\Predict Grades.exe
+S:\One Drive\OneDrive - Cowes Enterprise College\Machine Learning\Predicting Grades (Front End)\Predict Grades\bin\Debug\Predict Grades.pdb
+S:\One Drive\OneDrive - Cowes Enterprise College\Machine Learning\Predicting Grades (Front End)\Predict Grades\obj\Debug\Predict Grades.csprojAssemblyReference.cache
+S:\One Drive\OneDrive - Cowes Enterprise College\Machine Learning\Predicting Grades (Front End)\Predict Grades\obj\Debug\Predict_Grades.root.resources
+S:\One Drive\OneDrive - Cowes Enterprise College\Machine Learning\Predicting Grades (Front End)\Predict Grades\obj\Debug\Predict_Grades.Properties.Resources.resources
+S:\One Drive\OneDrive - Cowes Enterprise College\Machine Learning\Predicting Grades (Front End)\Predict Grades\obj\Debug\Predict Grades.csproj.GenerateResource.cache
+S:\One Drive\OneDrive - Cowes Enterprise College\Machine Learning\Predicting Grades (Front End)\Predict Grades\obj\Debug\Predict Grades.csproj.CoreCompileInputs.cache
+S:\One Drive\OneDrive - Cowes Enterprise College\Machine Learning\Predicting Grades (Front End)\Predict Grades\obj\Debug\Predict Grades.exe
+S:\One Drive\OneDrive - Cowes Enterprise College\Machine Learning\Predicting Grades (Front End)\Predict Grades\obj\Debug\Predict Grades.pdb
