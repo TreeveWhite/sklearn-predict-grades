@@ -4,7 +4,7 @@ python:
   - "3.6"
   
 before_install:
-  - cd "Predicting Grades (Back End)"
+  - cd Predicting_Grades_Back_End
   
 script: 
   - python test_DataSet.py
