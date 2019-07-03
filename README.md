@@ -1,4 +1,4 @@
-# Predcicting Grades
+# Predicting Grades
 ### Build Staus
 
 [![Build Status](https://travis-ci.org/TreeveWhite/Predicting-Grades.svg?branch=master)](https://travis-ci.org/TreeveWhite/Predicting-Grades)
