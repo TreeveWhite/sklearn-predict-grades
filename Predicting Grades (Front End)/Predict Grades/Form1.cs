@@ -31,7 +31,7 @@ namespace Predict_Grades
 
         private void helpBtn_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("S:\\One Drive\\OneDrive - Cowes Enterprise College\\Machine Learning\\Predicting Grades (Front End)\\website_home.html");
+            System.Diagnostics.Process.Start("website_home.html");
         }
     }
 }
