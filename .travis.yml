@@ -11,3 +11,4 @@ before_install:
 script: 
   - python test_DataSet.py
   - python test_Models.py
+  - python test_Enums.py
