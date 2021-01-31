@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/TreeveWhite/Predicting-Grades.svg?branch=master)](https://travis-ci.org/TreeveWhite/Predicting-Grades)
 ![APM](https://img.shields.io/apm/l/vim-mode.svg)
 ### Description
-This is a project which uses Sklearn libraries to predict final A-level grades from your mock grades and attendence percentage. It uses a simple text interface as of current yet a ui interfcae using C# is in the works and current progress can be seen in the front End section.
+This is a project which uses Sklearn libraries to predict final A-level grades from your mock grades and attendence percentage. 
 
 ### Installing
 > Will need a working verion of Python 3
