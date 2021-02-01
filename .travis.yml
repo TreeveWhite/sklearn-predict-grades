@@ -4,7 +4,7 @@ python:
   - "3.6"
   
 before_install:
-  - cd Predicting_Grades_Back_End
+  - cd predicting-grades-pkg
   - "pip install -U sklearn"
   - "pip install -U pandas"
   
