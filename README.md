@@ -1,34 +1,48 @@
 # Predicting Grades
-### Build Staus
 
 [![Build Status](https://travis-ci.org/TreeveWhite/Predicting-Grades.svg?branch=master)](https://travis-ci.org/TreeveWhite/Predicting-Grades)
 ![APM](https://img.shields.io/apm/l/vim-mode.svg)
-### Description
-This is a project which uses Sklearn libraries to predict final A-level grades from your mock grades and attendence percentage. 
 
-### Installing
-> Will need a working verion of Python 3
->>
-> Will need unittest module if wish to run the Unit Tests
+This is a project which uses Sklearn libraries to predict final A-level grades from your mock grades and attendence percentage. The project was created as a way to learn about the bascis of machine learning in python without a depth look at the complexities of the libraries and methods.
+## Getting Started
 
+### Prerequsits
 
-### Testing
-Program uses continus integration Testing through travis-ci.com yet can run the tests individually through files with "test_".
-The file they test will follow after this prefix.
+The program is written in the Python 3 programming language.  You will need a working version of the python interpreter which is available at https://www.python.org/downloads/. In particular your python version must include the pip module which will be used to download the other necessary requirement (more information on this bellow).
+
+The program relies upon the machine learning model KNeighborsClassifier, more infomation on this type of machine learning model can be found both online and at the sklearn website where the library is from.
+### Set Up
+
+To access the program you can either download it from Github (given you have access) or download it as a zip file from the eBart system. Both options are outlined bellow.
+
+1) Download the repository from Github using:
+
+```bash
+$ git clone https://github.com/TreeveWhite/PREDICTING-GRADES
+```
+
+2) Download the zip file and then extract all the files to your local computer in a folder called PREDICTING-GRADES.
+
+Once you have a copy of the package on your local computer, install the requirements:
+
+```bash
+$ cd PREDICTING-GRADES
+$ py -m pip install -r reqirements.txt
+```
+## Running the Program
+
+Ensure you have installed all the requirements discussed above before running the app using:
+
+```bash
+$ cd PREDICTING-GRADES
+$ cd predicting-grades-pkg
+$ py -m PredictGrades
+```
+
+## Testing
+Program uses continus integration Testing through travis-ci.com yet can run the tests individually through files with "test_". These tests can all be run manually from within the tests folder.
+
+## Description
 
 ### License
-MIT License
-
-Copyright (c) [2019] [Treeve White]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-MIT © TreeveWhite
+This project uses the MIT license, see the license file for furthr details.
