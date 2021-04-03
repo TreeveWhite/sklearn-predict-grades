@@ -9,7 +9,8 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 from sklearn.linear_model import LinearRegression
-from Enums import *
+from Grade import Grade
+from ModelType import ModelType
 import numpy
 
 class Predictor:
