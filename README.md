@@ -13,28 +13,37 @@ The program is written in the Python 3 programming language.  You will need a wo
 The program relies upon the machine learning model KNeighborsClassifier, more infomation on this type of machine learning model can be found both online and at the sklearn website where the library is from.
 ### Set Up
 
-To access the program you can either download it from Github (given you have access) or download it as a zip file from the eBart system. Both options are outlined bellow.
+To access the program you can either download it from Github (given you have access) using Git commands or download it as a zip file from the eBart system. Both options are outlined bellow.
 
 1) Download the repository from Github using:
 
 ```bash
-$ git clone https://github.com/TreeveWhite/PREDICTING-GRADES
+$ git clone https://github.com/TreeveWhite/sklearn-predict-grades
 ```
 
-2) Download the zip file and then extract all the files to your local computer in a folder called PREDICTING-GRADES.
+2) Download the zip file and then extract all the files to your local computer in a folder called sklearn-predict-grades.
 
 Once you have a copy of the package on your local computer, install the requirements:
 
 ```bash
-$ cd PREDICTING-GRADES
+$ cd sklearn-predict-grades
 $ py -m pip install -r reqirements.txt
 ```
+
+Run the test test-rquirements using the following command to ensure that the correct modules have all been dowloaded and are accessable under your current build enviroment.
+
+```bash
+$ cd sklearn-predict-grades
+$ cd test
+$ py test_requirements
+```
+
 ## Running the Program
 
 Ensure you have installed all the requirements discussed above before running the app using:
 
 ```bash
-$ cd PREDICTING-GRADES
+$ cd sklearn-predict-grades
 $ cd predicting-grades-pkg
 $ py -m PredictGrades
 ```
@@ -43,6 +52,8 @@ $ py -m PredictGrades
 Program uses continus integration Testing through travis-ci.com yet can run the tests individually through files with "test_". These tests can all be run manually from within the tests folder.
 
 ## Description
+
+This project was my first investigation into how AI is created using Python and the logic surrounding how the sklearn package opperates. The project uses the sklearn module and more secifically the KNeighborsClassifier method of the module. This algorith  works by finding the  nearest neighbours to the data which is given and then classifying based on these neighbours. More details about this can be found in the sklearn documetation avalible on their website.
 
 ### License
 This project uses the MIT license, see the license file for furthr details.
