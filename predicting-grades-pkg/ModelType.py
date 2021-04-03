@@ -10,10 +10,3 @@ class ModelType(enum.Enum):
     DecisionTreeClassifier = 4
     GaussianNB = 5
     SVC = 6
-class Grade(enum.Enum):
-    a = 6
-    b = 5
-    c = 4
-    d = 3
-    e = 2
-    f = 1
