@@ -1,5 +1,7 @@
 """
-A class for comtrolling all models
+Models.py
+=======================================================
+This mdule contains the models class which is used by the predicting grades package.
 """
 
 from sklearn import model_selection
@@ -16,13 +18,41 @@ from Enums import ModelType
 
 
 class Models:
-    def __init__(self):
+    """
+    This class is used to handle all the possible models.
+
+    These models are taken from the sklearn library and all could be used to analyse the data and
+    create prodictions.
+    """
+
+    def __init__(self : object) -> None:
+        """
+        This method initialises a Models object.
+
+        The objects attributes are all set to be empty to allow the makeModels method to later add
+        mdels to the modelList array and their respective accuracy to the modelAccuracy array.
+        
+        :param self:    The current Models Object
+        :type self:     Models (object)
+
+        :return :   None
+        :rtype :    None
+        """
         self.modelList = []
         self.modelAccuracy = []
         
         self.makeModels()
         
     def makeModels(self):
+        """
+        This method makes and appends all the models to the modelsList array.
+
+        :param self:    The current Models Object
+        :type self:     Models (object)
+
+        :return :   None
+        :rtype :    None
+        """
         self.modelList.append((ModelType.LogisticRegression, LogisticRegression(solver='liblinear', multi_class='ovr')))
         self.modelList.append((ModelType.LinearDiscriminantAnalysis, LinearDiscriminantAnalysis()))
         self.modelList.append((ModelType.KNeighborsClassifier, KNeighborsClassifier()))
@@ -31,6 +61,20 @@ class Models:
         self.modelList.append((ModelType.SVC, SVC(gamma='auto')))
 
     def analyseModels(self, dataset):
+        """
+        This metod loop over the models and compares thir accuracy in regard to the given data set to calculae their overall
+        accuracy percentage out of 100. 
+
+        This infomation can then later be used to determine whih model is the best to use for a specific data set.
+
+        :param self:    The current Models Object
+        :type self:     Models (object)
+        :param dataset: The dataset which the model accuracy shoud be analysed in relation to.
+        :type dataset:  DataSet (object)
+
+        :return :   None
+        :rtype :    None
+        """
         results = []
         names = []
         self.accuracyScores = []
