@@ -11,9 +11,11 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 from sklearn.linear_model import LinearRegression
-from Grade import Grade
-from ModelType import ModelType
 import numpy
+
+from predictgrades.ModelType import ModelType
+from predictgrades.Grade import Grade
+from PredictGrades.DataSet import DataSet
 
 class Predictor:
     """

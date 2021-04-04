@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treeve White - Predicting Gardes with sklearn &#8212; Predicting Gardes with sklearn 2021 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Predicting Gardes with sklearn 2021 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Treeve White - Predicting Gardes with sklearn</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="treeve-white-predicting-gardes-with-sklearn">
+<h1>Treeve White - Predicting Gardes with sklearn<a class="headerlink" href="#treeve-white-predicting-gardes-with-sklearn" title="Permalink to this headline">¶</a></h1>
+<p>This is the documentation for Treeve White’s Predicting Gardes with sklearn package.</p>
+</div>
+<div class="section" id="main-package">
+<h1>Main Package<a class="headerlink" href="#main-package" title="Permalink to this headline">¶</a></h1>
+<p>The following documentation is related to the main package.</p>
+<span class="target" id="module-predictgrades.DataSet"></span><div class="section" id="dataset-py">
+<h2>DataSet.py<a class="headerlink" href="#dataset-py" title="Permalink to this headline">¶</a></h2>
+<p>This moule contains the DataSet class which is used in the predicting grades package.</p>
+<dl class="py class">
+<dt id="predictgrades.DataSet.DataSet">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">predictgrades.DataSet.</span></code><code class="sig-name descname"><span class="pre">DataSet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataLocation</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numColumns</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validationSize</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoringBasis</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'accuracy'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#predictgrades.DataSet.DataSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to hold the infomation on the data set which is used to train the model
+used by the predicting grades package.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-predictgrades.Models"></span><div class="section" id="models-py">
+<h2>Models.py<a class="headerlink" href="#models-py" title="Permalink to this headline">¶</a></h2>
+<p>This mdule contains the models class which is used by the predicting grades package.</p>
+<dl class="py class">
+<dt id="predictgrades.Models.Models">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">predictgrades.Models.</span></code><code class="sig-name descname"><span class="pre">Models</span></code><a class="headerlink" href="#predictgrades.Models.Models" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is used to handle all the possible models.</p>
+<p>These models are taken from the sklearn library and all could be used to analyse the data and
+create prodictions.</p>
+<dl class="py method">
+<dt id="predictgrades.Models.Models.analyseModels">
+<code class="sig-name descname"><span class="pre">analyseModels</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#predictgrades.Models.Models.analyseModels" title="Permalink to this definition">¶</a></dt>
+<dd><p>This metod loop over the models and compares thir accuracy in regard to the given data set to calculae their overall
+accuracy percentage out of 100.</p>
+<p>This infomation can then later be used to determine whih model is the best to use for a specific data set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<a class="reference internal" href="#predictgrades.Models.Models" title="predictgrades.Models.Models"><em>Models</em></a><em> (</em><em>object</em><em>)</em>) – The current Models Object</p></li>
+<li><p><strong>dataset</strong> (<a class="reference internal" href="#predictgrades.DataSet.DataSet" title="predictgrades.DataSet.DataSet"><em>DataSet</em></a><em> (</em><em>object</em><em>)</em>) – The dataset which the model accuracy shoud be analysed in relation to.</p></li>
+</ul>
+</dd>
+</dl>
+<p>:return :   None
+:rtype :    None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="predictgrades.Models.Models.makeModels">
+<code class="sig-name descname"><span class="pre">makeModels</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#predictgrades.Models.Models.makeModels" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method makes and appends all the models to the modelsList array.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#predictgrades.Models.Models" title="predictgrades.Models.Models"><em>Models</em></a><em> (</em><em>object</em><em>)</em>) – The current Models Object</p>
+</dd>
+</dl>
+<p>:return :   None
+:rtype :    None</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<span class="target" id="module-predictgrades.PredictGrades"></span><div class="section" id="predictgrade-py">
+<h2>PredictGrade.py<a class="headerlink" href="#predictgrade-py" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the runner code for the predict grade package.</p>
+<dl class="py function">
+<dt id="predictgrades.PredictGrades.main">
+<code class="sig-prename descclassname"><span class="pre">predictgrades.PredictGrades.</span></code><code class="sig-name descname"><span class="pre">main</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataLocation</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numColumns</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validationSize</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#predictgrades.PredictGrades.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is the runner for the predict gardes package.</p>
+<p>The method initialises all the other neccessary objects and then created a peciction based
+upon the model selected and the inputted data from the user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataLocation</strong> (<em>string</em>) – The path of the database (.csv) file which holds the existing data to be used
+by the sklearn model.</p></li>
+<li><p><strong>numColumns</strong> – The number of columns in the dataset.</p></li>
+<li><p><strong>validationSize</strong> (<em>integer</em>) – The validation size of the data set.</p></li>
+<li><p><strong>seed</strong> (<em>integer</em>) – The seed of the data set.</p></li>
+</ul>
+</dd>
+</dl>
+<p>:return :   None
+:rtype :    None</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-predictgrades.TextInterface"></span><div class="section" id="textinterface-py">
+<h2>TextInterface.py<a class="headerlink" href="#textinterface-py" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the TextInterface class which is used by the predicting grades package.</p>
+<dl class="py class">
+<dt id="predictgrades.TextInterface.TextInterface">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">predictgrades.TextInterface.</span></code><code class="sig-name descname"><span class="pre">TextInterface</span></code><a class="headerlink" href="#predictgrades.TextInterface.TextInterface" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class contains all the text interface methods.</p>
+<p>The object controls all interctions with the user via a text based terminal. This form of interface
+with teh user could be swapped or interchanged with another GUI or similar so long as the same methods
+are carried out and can be called by the main program of the package.</p>
+<dl class="py method">
+<dt id="predictgrades.TextInterface.TextInterface.getPredictionValue">
+<code class="sig-name descname"><span class="pre">getPredictionValue</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#predictgrades.TextInterface.TextInterface.getPredictionValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to get th users input data for the students mock grade and attendance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#predictgrades.TextInterface.TextInterface" title="predictgrades.TextInterface.TextInterface"><em>TextInterface</em></a><em> (</em><em>object</em><em>)</em>) – The Text Interfance object</p>
+</dd>
+</dl>
+<p>:return :   The students mock grade and attendance in a array.
+:rtype :    list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="predictgrades.TextInterface.TextInterface.showPrediction">
+<code class="sig-name descname"><span class="pre">showPrediction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prediction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#predictgrades.TextInterface.TextInterface.showPrediction" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method displays the calculated prediction for the grade.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> (<a class="reference internal" href="#predictgrades.TextInterface.TextInterface" title="predictgrades.TextInterface.TextInterface"><em>TextInterface</em></a><em> (</em><em>object</em><em>)</em>) – The Text Interfance object</p></li>
+<li><p><strong>prediction</strong> (<em>string</em>) – The predicted grade.</p></li>
+</ul>
+</dd>
+</dl>
+<p>:return :   None
+:rtype :    None</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="enumerator-classes">
+<h1>Enumerator Classes<a class="headerlink" href="#enumerator-classes" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="test-package">
+<h1>Test Package<a class="headerlink" href="#test-package" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Treeve White - Predicting Gardes with sklearn</a></li>
+<li><a class="reference internal" href="#main-package">Main Package</a><ul>
+<li><a class="reference internal" href="#dataset-py">DataSet.py</a></li>
+<li><a class="reference internal" href="#models-py">Models.py</a></li>
+<li><a class="reference internal" href="#predictgrade-py">PredictGrade.py</a></li>
+<li><a class="reference internal" href="#textinterface-py">TextInterface.py</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#enumerator-classes">Enumerator Classes</a></li>
+<li><a class="reference internal" href="#test-package">Test Package</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Predicting Gardes with sklearn 2021 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Treeve White - Predicting Gardes with sklearn</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Treeve G. White.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.3.
+    </div>
+  </body>
+</html>

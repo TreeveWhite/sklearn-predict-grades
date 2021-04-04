@@ -4,17 +4,18 @@ Models.py
 This mdule contains the models class which is used by the predicting grades package.
 """
 
-from sklearn import model_selection
-from sklearn.metrics import accuracy_score
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVC
-from sklearn.linear_model import LinearRegression
-from sklearn.datasets import make_regression
-from Enums import ModelType
+# from sklearn import model_selection
+# from sklearn.metrics import accuracy_score
+# from sklearn.linear_model import LogisticRegression
+# from sklearn.tree import DecisionTreeClassifier
+# from sklearn.neighbors import KNeighborsClassifier
+# from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+# from sklearn.naive_bayes import GaussianNB
+# from sklearn.svm import SVC
+# from sklearn.linear_model import LinearRegression
+# from sklearn.datasets import make_regression
+
+# from ModelType import ModelType
 
 
 class Models:
